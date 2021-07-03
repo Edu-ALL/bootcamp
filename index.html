@@ -407,16 +407,16 @@
         }
         $('.menu').slideToggle('fast');
 
-    })
+        $('.menu').click(function () {
+            var icon = ($('.text-end i').data('status'))
+            $('.menu').hide('fast');
+            if (icon == 'open') {
+                $('.text-end').html('<i class="fas fa-times" data-status="close"></i>')
+            } else {
+                $('.text-end').html('<i class="fas fa-bars" data-status="open"></i>')
+            }
+        })
 
-    $('.menu').click(function () {
-        var icon = ($('.text-end i').data('status'))
-        $('.menu').hide('fast');
-        if (icon == 'open') {
-            $('.text-end').html('<i class="fas fa-times" data-status="close"></i>')
-        } else {
-            $('.text-end').html('<i class="fas fa-bars" data-status="open"></i>')
-        }
     })
 
 
