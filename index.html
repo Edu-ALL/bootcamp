@@ -187,7 +187,7 @@
             border: 1px solid #dedede;
             transition-duration: 0.5s;
             padding: 5px 15px;
-            font-size: 23px;
+            font-size: 21px;
             cursor: pointer;
             border-radius: 20px;
         }
@@ -216,6 +216,14 @@
             transition-duration: 0.5s;
             cursor: pointer;
             border: 1px solid #dedede;
+        }
+
+        .menu-item a {
+            padding-right: 100% !important;
+        }
+
+        .float-end {
+            margin-top: -20px !important;
         }
 
         .menu-item-right:hover,
@@ -252,7 +260,7 @@
                     Destinations
                 </div>
                 <div class="col-4 text-end">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" data-status="open"></i>
                 </div>
             </div>
         </div>
@@ -379,9 +387,18 @@
 
 <script>
     $('.menu-burger').click(function () {
+        var icon = ($('.text-end i').data('status'))
+        if (icon == 'open') {
+            $('.text-end').html('<i class="fas fa-times" data-status="close"></i>')
+        } else {
+            $('.text-end').html('<i class="fas fa-bars" data-status="open"></i>')
+        }
+
+
         $('.menu').slideToggle('fast');
         $('.menu').click(function () {
             $('.menu').hide('fast');
+
         })
     })
 
