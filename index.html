@@ -34,6 +34,16 @@
         line-height: 1.4;
     }
 
+    .waiting {
+        height: 100vh;
+        margin: 0 47%;
+        padding-top: 45vh;
+    }
+
+    .waiting img {
+        width: 100%;
+    }
+
     .bootcamp {
         background: url('assets/img/background\ lp.webp');
         background-attachment: fixed;
@@ -154,7 +164,21 @@
         padding-bottom: 10% !important;
     }
 
+    /* #oxbridge,
+    #ivyLeague,
+    #california,
+    #asian,
+    #canadian {
+        scroll-margin-top: 100vh !important;
+    } */
+
     @media only screen and (max-width: 600px) {
+        .waiting {
+            height: 100vh;
+            margin: 0 45%;
+            padding-top: 45vh;
+        }
+
         h2 {
             line-height: 0.4;
             margin-bottom: 20px;
@@ -264,8 +288,10 @@
 </style>
 
 <body>
-
-    <div class="container-fluid g-0 bootcamp">
+    <div class="waiting">
+        <img src="assets/img/load.gif">
+    </div>
+    <div class="container-fluid g-0 bootcamp d-none">
         <div class="menu-burger">
             <div class="row">
                 <div class="col-8">
@@ -332,7 +358,7 @@
             <img src="assets/img/oxbridge.webp" alt="University Application Bootcamp" class="img-content">
             <div class="desc-content">
                 <h3>Excited to continue your studies at
-                    top Universities in the UK? Let’s work
+                    top Universities in the UK? <br> Let’s work
                     out your application strategies with our mentors!</h3>
                 <div class="mt-4">
                     <a href="#blank" class="btn-bootcamp">Join Now!</a>
@@ -343,7 +369,7 @@
             <img src="assets/img/ivy league.webp" alt="University Application Bootcamp" class="img-content">
             <div class="desc-content">
                 <h3>Got your eyes set on one of the top universities
-                    in the USA? Let’s grind through each aspect of
+                    in the USA? <br> Let’s grind through each aspect of
                     your university application with our mentors!</h3>
                 <div class="mt-4">
                     <a href="#blank" class="btn-bootcamp">Join Now!</a>
@@ -355,7 +381,7 @@
                 class="img-content">
             <div class="desc-content">
                 <h3>Looking forward to continuing your studies
-                    in the sunny state? Our mentors are ready to
+                    in the sunny state? <br> Our mentors are ready to
                     guide you through the process!</h3>
                 <div class="mt-4">
                     <a href="#blank" class="btn-bootcamp">Join Now!</a>
@@ -366,7 +392,7 @@
             <img src="assets/img/top asian.webp" alt="University Application Bootcamp" class="img-content">
             <div class="desc-content">
                 <h3>Ready for your study abroad adventure in top
-                    universities in Asia? Start planning your admission
+                    universities in Asia? <br> Start planning your admission
                     strategies with our mentors!</h3>
                 <div class="mt-4">
                     <a href="#blank" class="btn-bootcamp">Join Now!</a>
@@ -376,7 +402,7 @@
         <div class="container content" id="canadian">
             <img src="assets/img/top canadian.webp" alt="University Application Bootcamp" class="img-content">
             <div class="desc-content">
-                <h3>Eager to continue your studies in Canada?
+                <h3>Eager to continue your studies in Canada? <br>
                     Our mentors are here to help you with your
                     application process!</h3>
                 <div class="mt-4">
@@ -398,6 +424,17 @@
     crossorigin="anonymous"></script>
 
 <script>
+    setTimeout(function () {
+        $('.waiting').fadeOut()
+        $('.waiting').addClass('d-none')
+        $('.bootcamp').removeClass('d-none')
+        var hash = window.location.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        });
+
+    }, 3000);
+
     $('.menu-burger').click(function () {
         var icon = ($('.text-end i').data('status'))
         if (icon == 'open') {
