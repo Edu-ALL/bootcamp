@@ -162,7 +162,7 @@
     }
 
     .content {
-        padding: 2% 12% 7% 12%;
+        margin: 2% 0% 7% 0%;
     }
 
     .img-content {
@@ -178,15 +178,15 @@
         padding-bottom: 10% !important;
     }
 
-    /* #oxbridge,
-    #ivyLeague,
-    #california,
-    #asian,
-    #canadian {
-        scroll-margin-top: 100vh !important;
-    } */
 
-    @media only screen and (max-width: 600px) {
+    .bootcamp-box {
+        width: 60%;
+        margin-left: 20%;
+        height: 700px;
+        overflow: scroll;
+    }
+
+    @media only screen and (max-width: 800px) {
         .waiting {
             height: 100vh;
             margin: 0 45%;
@@ -268,17 +268,21 @@
             padding-right: 100% !important;
         }
 
-        .float-end {
-            /* margin-top: -20px !important; */
-        }
 
         .menu-item-right:hover,
         .menu-item-left:hover {
             border-radius: 0;
         }
 
+        .bootcamp-box {
+            width: 80%;
+            margin-left: 10%;
+            height: 500px;
+            overflow: scroll;
+        }
+
         .content {
-            padding: 4% 12% 20% 12%;
+            padding: 4% 0% 20% 0%;
         }
 
         .img-title {
@@ -293,6 +297,7 @@
 
         .desc-title small {
             font-size: 13px;
+            line-height: 1.5;
         }
 
         .img-content {
@@ -374,58 +379,60 @@
                 <small>* Applies to Oxbridge, Ivy League, University of California, and Canadian Bootcamps</small>
             </div>
         </div>
-        <div class="container content" id="oxbridge">
-            <img src="assets/img/news/oxbridge.webp" alt="University Application Bootcamp" class="img-content">
-            <div class="desc-content">
-                <h3>Excited to continue your studies at
-                    top Universities in the UK? <br> Let’s work
-                    out your application strategies with our mentors!</h3>
-                <div class="mt-4">
-                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+        <div class="bootcamp-box">
+            <div class="container content" id="oxbridge">
+                <img src="assets/img/news/oxbridge.webp" alt="University Application Bootcamp" class="img-content">
+                <div class="desc-content">
+                    <h3>Excited to continue your studies at
+                        top Universities in the UK? <br> Let’s work
+                        out your application strategies with our mentors!</h3>
+                    <div class="mt-4">
+                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container content" id="ivyLeague">
-            <img src="assets/img/news/ivy league.webp" alt="University Application Bootcamp" class="img-content">
-            <div class="desc-content">
-                <h3>Got your eyes set on one of the top universities
-                    in the USA? <br> Let’s grind through each aspect of
-                    your university application with our mentors!</h3>
-                <div class="mt-4">
-                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+            <div class="container content" id="ivyLeague">
+                <img src="assets/img/news/ivy league.webp" alt="University Application Bootcamp" class="img-content">
+                <div class="desc-content">
+                    <h3>Got your eyes set on one of the top universities
+                        in the USA? <br> Let’s grind through each aspect of
+                        your university application with our mentors!</h3>
+                    <div class="mt-4">
+                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container content" id="california">
-            <img src="assets/img/news/california.webp" alt="University Application Bootcamp" class="img-content">
-            <div class="desc-content">
-                <h3>Looking forward to continuing your studies
-                    in the sunny state? <br> Our mentors are ready to
-                    guide you through the process!</h3>
-                <div class="mt-4">
-                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+            <div class="container content" id="california">
+                <img src="assets/img/news/california.webp" alt="University Application Bootcamp" class="img-content">
+                <div class="desc-content">
+                    <h3>Looking forward to continuing your studies
+                        in the sunny state? <br> Our mentors are ready to
+                        guide you through the process!</h3>
+                    <div class="mt-4">
+                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container content" id="asian">
-            <img src="assets/img/news/top asian.webp" alt="University Application Bootcamp" class="img-content">
-            <div class="desc-content">
-                <h3>Ready for your study abroad adventure in top
-                    universities in Asia? <br> Start planning your admission
-                    strategies with our mentors!</h3>
-                <div class="mt-4">
-                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+            <div class="container content" id="asian">
+                <img src="assets/img/news/top asian.webp" alt="University Application Bootcamp" class="img-content">
+                <div class="desc-content">
+                    <h3>Ready for your study abroad adventure in top
+                        universities in Asia? <br> Start planning your admission
+                        strategies with our mentors!</h3>
+                    <div class="mt-4">
+                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container content" id="canadian">
-            <img src="assets/img/news/top canadian.webp" alt="University Application Bootcamp" class="img-content">
-            <div class="desc-content">
-                <h3>Eager to continue your studies in Canada? <br>
-                    Our mentors are here to help you with your
-                    application process!</h3>
-                <div class="mt-4">
-                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+            <div class="container content" id="canadian">
+                <img src="assets/img/news/top canadian.webp" alt="University Application Bootcamp" class="img-content">
+                <div class="desc-content">
+                    <h3>Eager to continue your studies in Canada? <br>
+                        Our mentors are here to help you with your
+                        application process!</h3>
+                    <div class="mt-4">
+                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
+                    </div>
                 </div>
             </div>
         </div>
