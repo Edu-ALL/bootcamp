@@ -28,7 +28,7 @@
    }
 
    .bootcamp {
-       background: url('assets/img/background\ lp.webp');
+       background: url('../img/background\ lp.webp');
        background-attachment: fixed;
        background-position: center;
        background-size: 100%;
@@ -176,6 +176,10 @@
    }
 
    @media only screen and (max-width: 800px) {
+       .menu {
+           filter: blur(0px);
+           -webkit-filter: blur(0px);
+       }
        .waiting {
            height: 100vh;
            margin: 0 45%;
