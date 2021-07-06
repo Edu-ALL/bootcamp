@@ -1,0 +1,280 @@
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+   @font-face {
+       font-family: bootcamp;
+       src: url('../font/fonts/SportingGrotesque-Regular.otf');
+   }
+
+   h2 {
+       font-family: bootcamp;
+       color: #041F4E;
+       letter-spacing: -2px;
+   }
+
+   h3 {
+       font-family: 'Noto Sans JP', sans-serif;
+       font-size: 23px;
+       letter-spacing: 0.5px;
+       line-height: 1.4;
+   }
+
+   .waiting {
+       height: 100vh;
+       margin: 0 47%;
+       padding-top: 45vh;
+   }
+
+   .waiting img {
+       width: 100%;
+   }
+
+   .bootcamp {
+       background: url('assets/img/background\ lp.webp');
+       background-attachment: fixed;
+       background-position: center;
+       background-size: 100%;
+   }
+
+   .menu-burger {
+       display: none;
+   }
+
+   .menu {
+       background-color: #e9871fa6;
+       position: fixed;
+       left: 15%;
+       bottom: 3%;
+       width: 70%;
+       border: 1px solid #dedede;
+       border-radius: 30px;
+       transition-duration: 0.5s;
+       filter: blur(0.8px);
+       -webkit-filter: blur(0.8px);
+   }
+
+   .menu:hover {
+       background-color: #e9871f;
+       filter: blur(0px);
+       -webkit-filter: blur(0px);
+   }
+
+   .menu-item {
+       float: left;
+       text-align: center;
+       color: #fff;
+       transition-duration: 0.5s;
+       cursor: pointer;
+       padding: 15px 0 !important;
+   }
+
+   .menu-item a {
+       text-decoration: none;
+       color: #fff;
+       padding: 15px 5px !important;
+   }
+
+   .item-1, .item-2 {
+       width: 15%;
+   }
+
+   .item-3 {
+       width: 21%;
+   }
+
+   .item-4 {
+       width: 22%;
+   }
+
+   .item-5 {
+       width: 27%;
+   }
+
+   .menu-item:hover {
+       background: #041F4E;
+       color: #fff;
+   }
+
+   .menu-item-left:hover {
+       background: #041F4E;
+       color: #fff;
+       border-radius: 30px 0 0 30px;
+   }
+
+   .menu-item-right:hover {
+       background: #041F4E;
+       color: #fff;
+       border-radius: 0 30px 30px 0;
+   }
+
+   .btn-bootcamp {
+       background-color: #e9871f;
+       color: #fff;
+       padding: 10px 30px;
+       border-radius: 20px;
+       text-decoration: none;
+       transition-duration: 0.5s;
+   }
+
+   .btn-bootcamp:hover {
+       background-color: #041F4E;
+       color: #fff;
+   }
+
+   .content-title {
+       padding: 5% 10%;
+   }
+
+   .img-title {
+       width: 60%;
+   }
+
+   .desc-title {
+       width: 75%;
+       padding-top: 30px;
+       padding-left: 13%;
+   }
+
+   .desc-title small {
+       font-size: 16px;
+       color: #EB8821;
+   }
+
+   .content {
+       padding: 2% 12% 7% 12%;
+   }
+
+   .img-content {
+       width: 60%;
+   }
+
+   .desc-content {
+       padding-top: 30px;
+       padding-left: 15%;
+   }
+
+   #canadian {
+       padding-bottom: 10% !important;
+   }
+
+   /* #oxbridge,
+    #ivyLeague,
+    #california,
+    #asian,
+    #canadian {
+        scroll-margin-top: 100vh !important;
+    } */
+
+   .info {
+       float: right;
+       text-align: center;
+       border: 4px solid #EB8821;
+       border-radius: 100%;
+       padding: 5px 25px;
+       margin-top: 20px;
+       margin-right: 5%;
+       color: #041F4E;
+       font-family: bootcamp !important;
+   }
+
+   @media only screen and (max-width: 800px) {
+       .waiting {
+           height: 100vh;
+           margin: 0 45%;
+           padding-top: 45vh;
+       }
+       h2 {
+           line-height: 0.4;
+           margin-bottom: 20px;
+       }
+       h3 {
+           line-height: 1.4;
+           font-size: 17px;
+       }
+       #oxbridge, #ivyLeague, #california, #asian, #canadian {
+           scroll-margin-top: 75px;
+       }
+       #canadian {
+           padding-bottom: 30% !important;
+       }
+       .bootcamp {
+           background: url('assets/img/background\ lp.webp');
+           background-attachment: fixed;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+       .menu-burger {
+           display: block;
+           background-color: #e9871fc9;
+           position: fixed;
+           left: 2%;
+           bottom: 3%;
+           width: 96%;
+           border: 1px solid #dedede;
+           transition-duration: 0.5s;
+           padding: 5px 15px;
+           font-size: 21px;
+           cursor: pointer;
+           border-radius: 20px;
+       }
+       .menu-burger:hover {
+           background-color: #041F4E;
+           color: #fff;
+       }
+       .menu {
+           display: none;
+           background-color: #e9871fec;
+           border-radius: 20px;
+           left: 2%;
+           bottom: 10%;
+           width: 96%;
+           transition-duration: 0.5s;
+       }
+       .menu-item {
+           width: 100%;
+           float: none;
+           padding: 8px 20px !important;
+           text-align: left;
+           color: #fff;
+           transition-duration: 0.5s;
+           cursor: pointer;
+           border: 1px solid #dedede;
+       }
+       .menu-item a {
+           padding-right: 100% !important;
+       }
+       .menu-item-right:hover, .menu-item-left:hover {
+           border-radius: 0;
+       }
+       .content {
+           padding: 4% 12% 20% 12%;
+       }
+       .img-title {
+           width: 100%;
+       }
+       .desc-title {
+           padding-top: 30px;
+           padding-left: 0%;
+           width: 100%;
+       }
+       .desc-title small {
+           font-size: 13px;
+           line-height: 1.5;
+       }
+       .img-content {
+           width: 100%;
+       }
+       .desc-content {
+           padding-top: 30px;
+           padding-left: 0%;
+       }
+       .info {
+           float: right;
+           text-align: center;
+           border: 2px solid #EB8821;
+           border-radius: 100%;
+           padding: 5px 15px;
+           margin-right: 0%;
+           margin-top: -60%;
+           font-size: 11px;
+       }
+   }

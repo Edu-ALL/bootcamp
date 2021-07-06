@@ -10,6 +10,7 @@
         content="A 10-hours hands-on intensive course where you will work hand-in-hand with experienced mentors on your university application!">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootcamp.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERP6HVK9GV"></script>
     <script>
@@ -22,293 +23,7 @@
 </head>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-    @font-face {
-        font-family: bootcamp;
-        src: url('assets/font/fonts/SportingGrotesque-Regular.otf');
-    }
-
-    h2 {
-        font-family: bootcamp;
-        color: #041F4E;
-        letter-spacing: -2px;
-    }
-
-    h3 {
-        font-family: 'Noto Sans JP', sans-serif;
-        font-size: 23px;
-        letter-spacing: 0.5px;
-        line-height: 1.4;
-    }
-
-    .waiting {
-        height: 100vh;
-        margin: 0 47%;
-        padding-top: 45vh;
-    }
-
-    .waiting img {
-        width: 100%;
-    }
-
-    .bootcamp {
-        background: url('assets/img/background\ lp.webp');
-        background-attachment: fixed;
-        background-position: center;
-        background-size: 100%;
-    }
-
-    .menu-burger {
-        display: none;
-    }
-
-    .menu {
-        background-color: #e9871fa6;
-        position: fixed;
-        left: 15%;
-        bottom: 3%;
-        width: 70%;
-        border: 1px solid #dedede;
-        border-radius: 30px;
-        transition-duration: 0.5s;
-    }
-
-    .menu:hover {
-        background-color: #e9871f;
-    }
-
-    .menu-item {
-        float: left;
-        text-align: center;
-        color: #fff;
-        transition-duration: 0.5s;
-        cursor: pointer;
-        padding: 15px 0 !important;
-    }
-
-    .menu-item a {
-        text-decoration: none;
-        color: #fff;
-        padding: 15px 5px !important;
-    }
-
-    .item-1,
-    .item-2 {
-        width: 15%;
-    }
-
-    .item-3 {
-        width: 21%;
-    }
-
-    .item-4 {
-        width: 22%;
-    }
-
-    .item-5 {
-        width: 27%;
-    }
-
-
-    .menu-item:hover {
-        background: #041F4E;
-        color: #fff;
-    }
-
-    .menu-item-left:hover {
-        background: #041F4E;
-        color: #fff;
-        border-radius: 30px 0 0 30px;
-    }
-
-    .menu-item-right:hover {
-        background: #041F4E;
-        color: #fff;
-        border-radius: 0 30px 30px 0;
-    }
-
-    .btn-bootcamp {
-        background-color: #e9871f;
-        color: #fff;
-        padding: 10px 30px;
-        border-radius: 20px;
-        text-decoration: none;
-        transition-duration: 0.5s;
-    }
-
-    .btn-bootcamp:hover {
-        background-color: #041F4E;
-        color: #fff;
-    }
-
-    .content-title {
-        padding: 5% 10%;
-    }
-
-    .img-title {
-        width: 60%;
-    }
-
-    .desc-title {
-        width: 75%;
-        padding-top: 30px;
-        padding-left: 13%;
-    }
-
-    .desc-title small {
-        font-size: 16px;
-        color: #EB8821;
-    }
-
-    .content {
-        margin: 2% 0% 7% 0%;
-    }
-
-    .img-content {
-        width: 60%;
-    }
-
-    .desc-content {
-        padding-top: 30px;
-        padding-left: 15%;
-    }
-
-    #canadian {
-        padding-bottom: 10% !important;
-    }
-
-
-    .bootcamp-box {
-        width: 60%;
-        margin-left: 20%;
-        height: 700px;
-        overflow: scroll;
-    }
-
-    @media only screen and (max-width: 800px) {
-        .waiting {
-            height: 100vh;
-            margin: 0 45%;
-            padding-top: 45vh;
-        }
-
-        h2 {
-            line-height: 0.4;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            line-height: 1.4;
-            font-size: 17px;
-        }
-
-        #oxbridge,
-        #ivyLeague,
-        #california,
-        #asian,
-        #canadian {
-            scroll-margin-top: 75px;
-        }
-
-        #canadian {
-            padding-bottom: 30% !important;
-        }
-
-        .bootcamp {
-            background: url('assets/img/background\ lp.webp');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .menu-burger {
-            display: block;
-            background-color: #e9871fc9;
-            position: fixed;
-            left: 2%;
-            bottom: 3%;
-            width: 96%;
-            border: 1px solid #dedede;
-            transition-duration: 0.5s;
-            padding: 5px 15px;
-            font-size: 21px;
-            cursor: pointer;
-            border-radius: 20px;
-        }
-
-        .menu-burger:hover {
-            background-color: #041F4E;
-            color: #fff;
-        }
-
-        .menu {
-            display: none;
-            background-color: #e9871fec;
-            border-radius: 20px;
-            left: 2%;
-            bottom: 10%;
-            width: 96%;
-            transition-duration: 0.5s;
-        }
-
-        .menu-item {
-            width: 100%;
-            float: none;
-            padding: 8px 20px !important;
-            text-align: left;
-            color: #fff;
-            transition-duration: 0.5s;
-            cursor: pointer;
-            border: 1px solid #dedede;
-        }
-
-        .menu-item a {
-            padding-right: 100% !important;
-        }
-
-
-        .menu-item-right:hover,
-        .menu-item-left:hover {
-            border-radius: 0;
-        }
-
-        .bootcamp-box {
-            width: 80%;
-            margin-left: 10%;
-            height: 500px;
-            overflow: scroll;
-        }
-
-        .content {
-            padding: 4% 0% 20% 0%;
-        }
-
-        .img-title {
-            width: 100%;
-        }
-
-        .desc-title {
-            padding-top: 30px;
-            padding-left: 0%;
-            width: 100%;
-        }
-
-        .desc-title small {
-            font-size: 13px;
-            line-height: 1.5;
-        }
-
-        .img-content {
-            width: 100%;
-        }
-
-        .desc-content {
-            padding-top: 30px;
-            padding-left: 0%;
-        }
-    }
 </style>
 
 <body>
@@ -373,66 +88,80 @@
             <img src="assets/img/bootcamp title.webp" alt="University Application Bootcamp" class="img-title">
             <div class="desc-title">
                 <h2>Save your seat! _______________</h2>
-                <h3>A 10-hours hands-on intensive course where you will work hand-in-hand with experienced mentors on
+                <h3>A 10-hours* hands-on intensive course where you will work hand-in-hand with experienced mentors on
                     your university application!
                 </h3>
                 <small>* Applies to Oxbridge, Ivy League, University of California, and Canadian Bootcamps</small>
             </div>
         </div>
-        <div class="bootcamp-box">
-            <div class="container content" id="oxbridge">
-                <img src="assets/img/news/oxbridge.webp" alt="University Application Bootcamp" class="img-content">
-                <div class="desc-content">
-                    <h3>Excited to continue your studies at
-                        top Universities in the UK? <br> Let’s work
-                        out your application strategies with our mentors!</h3>
-                    <div class="mt-4">
-                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
-                    </div>
+        <div class="container content" id="oxbridge">
+            <img src="assets/img/oxbridge.webp" alt="University Application Bootcamp" class="img-content">
+            <div class="info">
+                10 Hr <br>
+                Course
+            </div>
+            <div class="desc-content">
+                <h3>Excited to continue your studies at
+                    top Universities in the UK? <br> Let’s work
+                    out your application strategies with our mentors!</h3>
+                <div class="mt-4">
+                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
                 </div>
             </div>
-            <div class="container content" id="ivyLeague">
-                <img src="assets/img/news/ivy league.webp" alt="University Application Bootcamp" class="img-content">
-                <div class="desc-content">
-                    <h3>Got your eyes set on one of the top universities
-                        in the USA? <br> Let’s grind through each aspect of
-                        your university application with our mentors!</h3>
-                    <div class="mt-4">
-                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
-                    </div>
+        </div>
+        <div class="container content" id="ivyLeague">
+            <img src="assets/img/ivy league.webp" alt="University Application Bootcamp" class="img-content">
+            <div class="info">
+                10 Hr <br>
+                Course
+            </div>
+            <div class="desc-content">
+                <h3>Got your eyes set on one of the top universities
+                    in the USA? <br> Let’s grind through each aspect of
+                    your university application with our mentors!</h3>
+                <div class="mt-4">
+                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
                 </div>
             </div>
-            <div class="container content" id="california">
-                <img src="assets/img/news/california.webp" alt="University Application Bootcamp" class="img-content">
-                <div class="desc-content">
-                    <h3>Looking forward to continuing your studies
-                        in the sunny state? <br> Our mentors are ready to
-                        guide you through the process!</h3>
-                    <div class="mt-4">
-                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
-                    </div>
+        </div>
+        <div class="container content" id="california">
+            <img src="assets/img/california.webp" alt="University Application Bootcamp" class="img-content">
+            <div class="info">
+                10 Hr <br>
+                Course
+            </div>
+            <div class="desc-content">
+                <h3>Looking forward to continuing your studies
+                    in the sunny state? <br> Our mentors are ready to
+                    guide you through the process!</h3>
+                <div class="mt-4">
+                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
                 </div>
             </div>
-            <div class="container content" id="asian">
-                <img src="assets/img/news/top asian.webp" alt="University Application Bootcamp" class="img-content">
-                <div class="desc-content">
-                    <h3>Ready for your study abroad adventure in top
-                        universities in Asia? <br> Start planning your admission
-                        strategies with our mentors!</h3>
-                    <div class="mt-4">
-                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
-                    </div>
+        </div>
+        <div class="container content" id="asian">
+            <img src="assets/img/top asian.webp" alt="University Application Bootcamp" class="img-content">
+            <div class="desc-content">
+                <h3>Ready for your study abroad adventure in top
+                    universities in Asia? <br> Start planning your admission
+                    strategies with our mentors!</h3>
+                <div class="mt-4">
+                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
                 </div>
             </div>
-            <div class="container content" id="canadian">
-                <img src="assets/img/news/top canadian.webp" alt="University Application Bootcamp" class="img-content">
-                <div class="desc-content">
-                    <h3>Eager to continue your studies in Canada? <br>
-                        Our mentors are here to help you with your
-                        application process!</h3>
-                    <div class="mt-4">
-                        <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
-                    </div>
+        </div>
+        <div class="container content" id="canadian">
+            <img src="assets/img/top canadian.webp" alt="University Application Bootcamp" class="img-content">
+            <div class="info">
+                10 Hr <br>
+                Course
+            </div>
+            <div class="desc-content">
+                <h3>Eager to continue your studies in Canada? <br>
+                    Our mentors are here to help you with your
+                    application process!</h3>
+                <div class="mt-4">
+                    <a href="https://bit.ly/app-bootcamp-rsvp" target="_blank" class="btn-bootcamp">Join Now!</a>
                 </div>
             </div>
         </div>
