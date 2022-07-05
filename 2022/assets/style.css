@@ -34,6 +34,7 @@ body {
     height: 100vh !important;
 }
 
+
 .navbar {
     transition: all 0.4s;
 }
@@ -95,6 +96,14 @@ body {
     position: relative;
 }
 
+.logo-join-orange {
+    width: 44.3%;
+    height: auto;
+    transform: translateX(-50%);
+    left: 20%;
+    position: relative;
+}
+
 .logo-12 {
     width: 32%;
     height: auto;
@@ -135,6 +144,9 @@ body {
     z-index: -1;
 }
 
+.bg {
+    background-color: #FAAF40 !important;
+}
 
 .header-bg {
     background: url(img/Home\ background\ 2.webp);
@@ -162,8 +174,8 @@ body {
 
 .logo-form {
     width: 85%;
-    margin-top: 175px;
-    margin-left: 95px;
+    margin-top: 140px;
+    margin-left: 75px;
 }
 
 .mt-n {
@@ -216,18 +228,28 @@ body {
 
 #info1 {
     position: relative;
-    top: -39px;
+    top: -33px !important;
     right: 8px;
     height: 20px;
     padding: 0;
+    transition: all 0.8s;
 }
 
+#info1.notactive {
+    top: -200px !important;
+}
+
+
 #info2 {
-    position: relative;
-    top: -39px;
-    right: 8px;
-    height: 20px;
+    position: absolute;
+    top: -200px !important;
+    right: 1057px;
     padding: 0;
+    transition: all 0.8s;
+}
+
+#info2.active {
+    top: -5px !important;
 }
 
 #logo12 {
@@ -270,8 +292,6 @@ body {
 .w-md-70-btn {
     width: 70% !important;
 }
-
-
 
 .speaker1 {
     height: 25%;
@@ -404,9 +424,119 @@ br {
     display: block;
 }
 
+.footer {
+    background: #16489F;
+    color: #fff;
+    font-size: 18px;
+    padding: 70px 0;
+}
+
+.footer a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.about {
+    position: relative;
+    z-index: 3;
+}
+
+.about-ico {
+    width: 20%;
+    height: auto;
+}
+
+.mb-6 {
+    margin-bottom: 2.2rem !important;
+}
+
+.dislink {
+    pointer-events: none;
+    cursor: default;
+}
+
+.frm-btn {
+    background-color: #C5D6EE !important;
+    color: #212955 !important;
+    width: 49%;
+
+}
+
+.select {
+    background-color: #fff !important;
+    color: #736767 !important;
+    border-color: #736767;
+    border-radius: 4px !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 10px 28px 10px 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://cdn.mailerlite.com/images/default/dropdown.svg) no-repeat right .75rem center/8px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.submit button {
+    background-color: #E78724 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    cursor: pointer;
+    font-family: Verdana, Geneva, sans-serif !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+    line-height: 21px !important;
+    height: auto;
+    padding: 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important
+}
+
+.submit {
+    margin: 0 0 20px 0;
+    float: left;
+    width: 100%
+}
+
+.submit button:hover {
+    background-color: #333 !important
+}
+
+.btn-check:checked+.btn {
+    background-color: #E78724 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    border: 1px solid #fff;
+
+}
+
+.button-bottom {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99999;
+}
+
 @media (max-width: 768px) {
     br {
         display: none;
+    }
+
+    .about-desc {
+        font-size: 14px;
     }
 
     .br1 {
@@ -528,11 +658,14 @@ br {
         background-position: center;
         margin-top: 0;
         /* top: -200px; */
-        height: 60vh;
+        height: auto;
     }
 
     .logo-form {
-        width: 85%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
         /* margin-top: 175px;
         margin-left: 0px; */
     }
@@ -561,5 +694,14 @@ br {
         margin-left: -10px;
         position: relative;
         z-index: 1;
+    }
+
+    .about-ico {
+        width: 35%;
+        height: auto;
+    }
+
+    .mb-6 {
+        margin-bottom: 0.9rem !important;
     }
 }
