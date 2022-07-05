@@ -74,6 +74,9 @@
                                 </a>
                             </li>
                         </ul>
+                        <a href="#join" id="butjoin"
+                            class="btn btn-orange d-none d-md-block position-absolute button-join">Join
+                            Now</a>
                     </div>
                     <div class="w-25 d-md-block d-none" id="logo12">
                         <img class="logo-12 navbar-brand position-absolute" src="assets/img/grade 12.webp" alt="">
@@ -174,8 +177,10 @@
                             Now</a>
                     </div>
                     <div class="col p-0 m-0 w-md-70-btn mb-md-0 my-2">
-                        <button type="button" class="btn btn-outline-orange fs-5 fw-semibold rounded-4 w-md2">Click Here
-                            To Get Bundle Deals</button>
+                        <a href="https://linktr.ee/allineduspacecontact"
+                            class="btn btn-outline-orange fs-5 fw-semibold rounded-4 w-md2" role="button"
+                            target="_blank">Click Here
+                            To Get Bundle Deals</a>
                     </div>
                 </div>
                 <hr>
@@ -214,8 +219,10 @@
                             Now</a>
                     </div>
                     <div class="col p-0 m-0 w-md-70-btn mb-md-0 my-2">
-                        <button type="button" class="btn btn-outline-orange fs-5 fw-semibold rounded-4 w-md2">Click Here
-                            To Get Bundle Deals</button>
+                        <a href="https://linktr.ee/allineduspacecontact"
+                            class="btn btn-outline-orange fs-5 fw-semibold rounded-4 w-md2" role="button"
+                            target="_blank">Click Here
+                            To Get Bundle Deals</a>
                     </div>
                 </div>
                 <hr>
@@ -254,8 +261,10 @@
                             Now</a>
                     </div>
                     <div class="col p-0 m-0 w-md-70-btn mb-md-0 my-2">
-                        <button type="button" class="btn btn-outline-orange fs-5 fw-semibold rounded-4 w-md2">Click Here
-                            To Get Bundle Deals</button>
+                        <a href="https://linktr.ee/allineduspacecontact"
+                            class="btn btn-outline-orange fs-5 fw-semibold rounded-4 w-md2" role="button"
+                            target="_blank">Click Here
+                            To Get Bundle Deals</a>
                     </div>
                 </div>
                 <hr>
@@ -291,8 +300,10 @@
                             Now</a>
                     </div>
                     <div class="col p-0 m-0 w-md-70-btn mb-md-0 my-2">
-                        <button type="button" class="btn btn-outline-orange fs-5 fw-semibold rounded-4 w-md2">Click Here
-                            To Get Bundle Deals</button>
+                        <a href="https://linktr.ee/allineduspacecontact"
+                            class="btn btn-outline-orange fs-5 fw-semibold rounded-4 w-md2" role="button"
+                            target="_blank">Click Here
+                            To Get Bundle Deals</a>
                     </div>
                 </div>
                 <hr>
@@ -754,6 +765,7 @@
                     document.getElementById("white").style.visibility = "visible";
                     $("#logo12").addClass('notactive');
                     $("#info2").removeClass('active');
+                    $("#butjoin").addClass('active');
                     $('.navbar').removeClass('default');
                     $('.navbar').addClass('active');
                     $('.nav-item a').addClass('text-white');
@@ -764,12 +776,13 @@
                 } else if ($(window).scrollTop() == 0) {
                     $('.navbar').removeClass('default');
                 } else {
-                    document.getElementById("info2").style.visibility = "hidden";
                     document.getElementById("normal").style.visibility = "visible";
                     document.getElementById("white").style.visibility = "hidden";
                     $('.navbar').removeClass('active');
                     $('.navbar').addClass('default');
                     $("#logo12").removeClass('notactive');
+                    $("#logo12").removeClass('notactive');
+                    $("#butjoin").removeClass('active');
                     $("#info2").removeClass('active');
                     $("#info1").removeClass('notactive');
                     $('.nav-item a').removeClass('text-white');

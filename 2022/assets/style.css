@@ -124,6 +124,16 @@ body {
     position: relative; */
 }
 
+.button-join {
+    width: 9%;
+    height: auto;
+    top: 16px;
+    right: 150px;
+    /* transform: translateX(-50%);
+    left: 20%;
+    position: relative; */
+}
+
 .logo-all {
     width: 7%;
     height: auto;
@@ -246,6 +256,15 @@ body {
     right: 1057px;
     padding: 0;
     transition: all 0.8s;
+}
+
+#butjoin {
+    top: -100px !important;
+    transition: all 0.8s;
+}
+
+#butjoin.active {
+    top: 16px !important;
 }
 
 #info2.active {
