@@ -472,8 +472,8 @@ br {
 }
 
 .br1 {
-    word-wrap: break-word !important;
-    word-break: break-word !important;
+    display: block;
+    word-break: break-all;
 }
 
 .footer {
@@ -650,11 +650,6 @@ br {
 
     .about-desc {
         font-size: 14px;
-    }
-
-    .br1 {
-        word-wrap: normal !important;
-        word-break: normal !important;
     }
 
     .half-ellipse {
