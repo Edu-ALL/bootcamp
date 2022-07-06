@@ -618,6 +618,16 @@ br {
 
 
 @media (max-width: 768px) {
+
+    .price {
+        position: absolute;
+        width: 26%;
+        height: auto;
+        z-index: 100;
+        top: -40px;
+        right: 10px;
+    }
+
     .w-85 {
         width: 100%;
     }
