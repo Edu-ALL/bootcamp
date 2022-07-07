@@ -38,7 +38,7 @@
                 <img id="normal" src="assets/img/All-in Logo/ALL-in Eduspace Logo.png"
                     class="navbar-brand logo-all d-block d-md-none" alt="">
                 <img id="white" src="assets/img/All-in Logo/ALL-in Eduspace Logo (white).png"
-                    class="navbar-brand logo-all d-block d-md-none" alt="">
+                    class="navbar-brand logo-all d-block d-md-none position-sticky" alt="">
                 <button class="navbar-toggler bg-white border white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -113,8 +113,6 @@
             experienced mentors on your
             university application!</h1>
     </div>
-
-
 
     <div class="container-fluid">
         <div class="row row-cols-md-2 row-cols-1 align-items-center py-5" style="background-color: #1D274B;">
@@ -739,7 +737,7 @@
             var scale = chroma.scale(['#551C6F', '#DD2265', '#FF6859', '#FDB235']).domain([start, $(document).height()]);
             $(window).on('scroll', function () {
                 console.log(window.scrollY)
-                $('.clr1').css('background-color', scale((window.scrollY || window.pageYOffset) * 1.25));
+                $('.clr1').css('background-color', scale((window.scrollY || window.pageYOffset) * 1.2));
             });
 
 
