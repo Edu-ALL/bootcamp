@@ -734,10 +734,10 @@
                 start = 1250
             }
 
-            console.log(start)
+            // console.log(start)
             var scale = chroma.scale(['#551C6F', '#DD2265', '#FF6859', '#FDB235']).domain([start, $(document).height()]);
             $(window).on('scroll', function () {
-                console.log(window.scrollY)
+                // console.log(window.scrollY)
                 $('.clr1').css('background-color', scale((window.scrollY || window.pageYOffset) * 1.2));
             });
 
