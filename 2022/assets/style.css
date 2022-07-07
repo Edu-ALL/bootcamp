@@ -262,19 +262,6 @@ body {
     top: -200px !important;
 }
 
-
-#info2 {
-    position: absolute;
-    top: -200px !important;
-    margin-right: 0;
-    padding: 0;
-    transition: all 1s;
-}
-
-#info2.active {
-    top: -5px !important;
-}
-
 .p {
     padding: 0.75rem !important;
 }
@@ -349,12 +336,7 @@ body {
 }
 
 .btn-red.active {
-    --bs-btn-bg: #F6921E;
-    --bs-btn-border-color: #F6921E;
-    --bs-btn-active-bg: #F6921E;
-    --bs-btn-active-border-color: #F6921E;
-    --bs-btn-disabled-bg: #F6921E;
-    --bs-btn-disabled-border-color: #F6921E;
+    top: -100px;
 }
 
 .btn-orange {
@@ -372,6 +354,7 @@ body {
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #F6921E;
     --bs-btn-disabled-border-color: #F6921E;
+
 }
 
 .btn-red-md {
@@ -390,8 +373,6 @@ body {
     --bs-btn-disabled-bg: #BE1E2D;
     --bs-btn-disabled-border-color: ##BE1E2D;
 }
-
-
 
 .btn-outline-orange {
     --bs-btn-color: #243870;
@@ -420,7 +401,7 @@ body {
 }
 
 .UC {
-    width: 25%;
+    width: 30%;
     height: 20%;
 }
 
@@ -612,11 +593,38 @@ br {
 
 .price {
     position: absolute;
-    width: 26%;
+    width: 35%;
     height: auto;
     z-index: 100;
-    top: 90px;
+    top: 85px;
+    right: 150px;
+}
+
+.price2 {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    z-index: 100;
+    top: 70px;
     right: 120px;
+}
+
+.price3 {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    z-index: 100;
+    top: 108px;
+    right: 110px;
+}
+
+.price4 {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    z-index: 100;
+    top: 68px;
+    right: 140px;
 }
 
 
@@ -624,7 +632,34 @@ br {
 
     .price {
         position: absolute;
-        width: 26%;
+        width: 28%;
+        height: auto;
+        z-index: 100;
+        top: 70px;
+        right: 10px;
+    }
+
+    .price2 {
+        position: absolute;
+        width: 28%;
+        height: auto;
+        z-index: 100;
+        top: 65px;
+        right: 10px;
+    }
+
+    .price3 {
+        position: absolute;
+        width: 28%;
+        height: auto;
+        z-index: 100;
+        top: 70px;
+        right: 10px;
+    }
+
+    .price4 {
+        position: absolute;
+        width: 28%;
         height: auto;
         z-index: 100;
         top: 60px;
