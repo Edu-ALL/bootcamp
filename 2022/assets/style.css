@@ -41,7 +41,7 @@ body {
 }
 
 .clr1 {
-    height: 100vh !important;
+    height: auto;
 }
 
 
@@ -392,22 +392,18 @@ body {
 
 .ivy {
     width: 75%;
-    height: 30%;
 }
 
 .oxbridge {
     width: 60%;
-    height: 30%;
 }
 
 .UC {
     width: 30%;
-    height: 20%;
 }
 
 .asian {
     width: 40%;
-    height: 35%;
 }
 
 .num1 {
@@ -854,21 +850,17 @@ br {
 
     .ivy {
         width: 85%;
-        height: 30%;
     }
 
     .oxbridge {
         width: 75%;
-        height: 30%;
     }
 
     .UC {
         width: 35%;
-        height: 20%;
     }
 
     .asian {
         width: 50%;
-        height: 35%;
     }
 }
