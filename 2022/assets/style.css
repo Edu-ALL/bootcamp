@@ -341,7 +341,12 @@ body {
 
 .speaker1 {
     height: auto;
-    width: 20%;
+    width: 22%;
+}
+
+.speaker12 {
+    height: auto;
+    width: 25%;
 }
 
 .tgl1-box {
@@ -821,6 +826,11 @@ br {
     }
 
     .speaker1 {
+        height: 35%;
+        width: 45%;
+    }
+
+    .speaker12 {
         height: 35%;
         width: 45%;
     }
