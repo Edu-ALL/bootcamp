@@ -22,7 +22,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERP6HVK9GV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-ERP6HVK9GV');
@@ -37,13 +40,19 @@
                 width: '100%',
                 pagination: false,
                 perPage: 2,
-                padding: { left: 0, right: 25 },
+                padding: {
+                    left: 0,
+                    right: 25
+                },
                 gap: '10px',
                 breakpoints: {
                     640: {
                         perPage: 1,
                         gap: '10px',
-                        padding: { left: 0, right: 35 },
+                        padding: {
+                            left: 0,
+                            right: 35
+                        },
                     },
                 }
             });
@@ -203,6 +212,8 @@
                 <div class="d-flex justify-content-md-start justify-content-center">
                     <img class="speaker1" src="assets/img/Ivy speaker 1.webp" alt="">
                     <img class="speaker1" src="assets/img/Ivy speaker 2.webp" alt="">
+                    <img class="speaker1" src="assets/img/Ivy speaker 3.webp" alt="">
+                    <img class="speaker1" src="assets/img/Ivy speaker 4.webp" alt="">
                 </div>
                 <div class="row row-cols-md-2 row-cols-1">
                     <div class="col p-0 m-0 w-md-30-btn mb-md-0 my-2">
@@ -1006,8 +1017,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
         integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"
         integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew=="
@@ -1019,20 +1030,24 @@
     <script>
         AOS.init();
 
-        function ml_webform_success_5719351() { var r = ml_jQuery || jQuery; r(".ml-subscribe-form-5719351 .row-success").show(), r(".ml-subscribe-form-5719351 .row-form").hide() }
+        function ml_webform_success_5719351() {
+            var r = ml_jQuery || jQuery;
+            r(".ml-subscribe-form-5719351 .row-success").show(), r(".ml-subscribe-form-5719351 .row-form").hide()
+        }
 
         document.addEventListener('DOMContentLoaded', function () {
             var x = window.matchMedia("(max-width: 700px)")
             var start = 0
             if (x.matches) {
                 start = 2125
-            }
-            else {
+            } else {
                 start = 1250
             }
 
             // console.log(start)
-            var scale = chroma.scale(['#551C6F', '#DD2265', '#FF6859', '#FDB235']).domain([start, $(document).height()]);
+            var scale = chroma.scale(['#551C6F', '#DD2265', '#FF6859', '#FDB235']).domain([start, $(document)
+                .height()
+            ]);
             $(window).on('scroll', function () {
                 // console.log(window.scrollY)
                 $('.clr1').css('background-color', scale((window.scrollY || window.pageYOffset) * 1.2));
