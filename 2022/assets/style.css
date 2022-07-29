@@ -346,7 +346,18 @@ body {
 
 .speaker12 {
     height: auto;
-    width: 25%;
+    width: 24%;
+}
+
+.speaker13 {
+    height: auto;
+    width: 20%;
+}
+
+
+.speaker14{
+    height: auto;
+    width: 22%;
 }
 
 .tgl1-box {
@@ -659,6 +670,15 @@ br {
     right: 120px;
 }
 
+.oxonis {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    z-index: 100;
+    top: 15px;
+    right: 160px;
+}
+
 .price3 {
     position: absolute;
     width: 35%;
@@ -695,6 +715,15 @@ br {
         height: auto;
         z-index: 100;
         top: 65px;
+        right: 10px;
+    }
+
+    .oxonis {
+        position: absolute;
+        width: 29%;
+        height: auto;
+        z-index: 100;
+        top: 15px;
         right: 10px;
     }
 
